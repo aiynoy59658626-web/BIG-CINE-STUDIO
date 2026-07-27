@@ -1,3 +1,4 @@
+import Link from "next/link";
 import EquipmentTable from "@/app/components/EquipmentTable";
 import { supabase } from "@/lib/supabase";
 
@@ -49,12 +50,12 @@ export default async function EquipmentPage() {
           </p>
         </div>
 
-        <a
+        <Link
           href="/add-equipment"
           className="rounded-xl bg-blue-600 px-6 py-3 text-white font-semibold hover:bg-blue-700 transition"
         >
           + เพิ่มอุปกรณ์
-        </a>
+        </Link>
       </div>
 
       {/* Summary */}
